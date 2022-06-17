@@ -33,6 +33,7 @@ public class Server {
                     e.printStackTrace();
                 }
             }
+
             System.out.println(line);
 
         } catch (IOException e) {
