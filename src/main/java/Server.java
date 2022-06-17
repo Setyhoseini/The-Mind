@@ -19,7 +19,10 @@ public class Server {
             ServerSocket serverSocket = new ServerSocket(8080);
             Socket hostSocket = serverSocket.accept();
 
-            int n =
+            ClientHandler host = new ClientHandler(hostSocket);
+            clientHandlers.add(host);
+
+            int n = host.getPrintWriter().println();
 
         } catch (IOException e) {
             e.printStackTrace();
